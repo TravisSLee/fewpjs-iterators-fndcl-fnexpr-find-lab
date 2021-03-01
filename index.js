@@ -5,5 +5,9 @@ const record = [
   ] 
 function superbowlWin(array){
     let win = array.find(function(e) { return e.result === "W" })
-    return win['year']
+    if (win == undefined) {
+        return undefined
+    } else {
+        return win['year']
+    }
 };
